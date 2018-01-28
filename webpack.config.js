@@ -3,12 +3,15 @@ var path = require('path')
 module.exports = {
     devtool: 'source-map',
     entry: [
-        './src/index.js'
+        './src/index.jsx'
     ],
     output: {
         path: path.join(__dirname, 'build'),
         filename: 'bundle.js',
         publicPath: '/static/'
+    },
+    resolve: {
+        extensions: ['.js', '.jsx']
     },
     module: {
         loaders: [
