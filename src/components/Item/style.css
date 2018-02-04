@@ -1,0 +1,30 @@
+.item{
+    border:solid 1px #000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  .item__image{
+    position:relative;
+  }
+  .item p{
+    padding: 0;
+    margin:0;
+  }
+  
+  .item__title{
+    font-size:20px;
+    font-weight:700;
+  }
+  
+  .item__description{
+    position:absolute;
+    padding:20px;
+    bottom:0;
+    background: linear-gradient(to bottom, #fefcea, #5a5a5a);
+    opacity:0;
+    transition: opacity 0.5s;
+  }
+  
+  .item__image:hover   .item__description{
+       transition-delay:0s;
+       opacity:1;
+  }

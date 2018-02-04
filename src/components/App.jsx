@@ -1,11 +1,11 @@
 import React from 'react';
-import Main from './Main.jsx';
+import Main from './Main';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 export default function App() {
   return (<div>
      <MuiThemeProvider>
-    <Main />
+        <Main />
     </MuiThemeProvider>
   </div>);
 }
