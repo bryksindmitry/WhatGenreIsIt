@@ -12,7 +12,7 @@ class Item extends Component {
                         <img src={art.img}/>
                         <p className="item__description">{art.description}</p>
                     </div>
-                    <p className="item__title">{art.title}</p>
+                    <a  href="#" className="item__title">{art.title}</a>
                 </div>
             </div>
         )

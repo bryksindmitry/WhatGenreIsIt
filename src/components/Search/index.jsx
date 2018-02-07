@@ -15,14 +15,13 @@ const style = {
 export default class Search extends Component {
   render() {
     return (
-      <div className="row">
-      <Paper className=" search-panel" style={style} zDepth={1}>
+      <Paper className=" row search-panel" style={style} zDepth={1}>
        <div className="col-xs-12 col-sm-6 col-md-10 search-panel__input">
           <Input/>
         </div>
-       <div className="col-xs-6 col-md-1 search-panel__button">
+       <div className="col-xs-6 col-md-2 search-panel__button">
        <Button/>
         </div>
-     </Paper></div>);
+     </Paper>);
   }
 }
