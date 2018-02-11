@@ -11,7 +11,7 @@ module.exports = {
         publicPath: '/static/'
     },
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx', '.jpg']
     },
     module: {
         loaders: [
@@ -23,6 +23,10 @@ module.exports = {
             {
                 test: /\.css/,
                 loaders: ['style-loader','css-loader']
+            },
+            {
+                test: /\.(png|jpg)$/,
+                loader: 'url?limit=25000'
             }
         ]
     }

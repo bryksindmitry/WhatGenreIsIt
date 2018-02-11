@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Search from '../Search'
-import Grid from '../Grid';
+import { connect } from 'react-redux'
+//import Search from '../Search'
+//import Grid from '../Grid';
+import GridPanels from '../GridPanels'
 
-export default class Main extends Component {
+class Main extends Component {
   static PropTypes = {
 
   }
@@ -12,9 +14,13 @@ export default class Main extends Component {
     console.log(this);
   }
   render() {
-      return(<div className="container">
-        <Search/>
-        <Grid />
-      </div>)
+      return( //<div className="container">
+        <GridPanels/>
+      )
+     // </div>)
     }
 }
+
+
+export default Main 
+
